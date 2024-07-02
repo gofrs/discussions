@@ -1,0 +1,23 @@
+body:
+  - type: input
+    id: slack
+    attributes:
+      label: Slack Display name
+      description: "[Gophers Slack](https://gophers.slack.com/messages/CBP4N9BEU)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: projects
+    attributes:
+      label: Project(s) you're interested in helping with
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: 2fa
+    attributes:
+      label: Two-factor Authentication
+      options:
+        - label: "Yes, I have enabled [Two-factor Authentication](https://github.blog/2013-09-03-two-factor-authentication/) on my account."
+          required: true
