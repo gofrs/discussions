@@ -1,0 +1,74 @@
+body:
+  - type: input
+    id: project
+    attributes:
+      label: Where is the project currently hosted?
+      placeholder: https://github.com/foo/bar
+    validations:
+      required: true
+
+  - type: dropdown
+    id: languages
+    attributes:
+      label: What languages other than Go does the project utilize?
+      multiple: true
+      options:
+        - make
+        - bash
+        - javascript
+        - typescript
+        - python
+        - C
+        - others
+
+  - type: input
+    id: activity
+    attributes:
+      label: When was the project's last activity?
+      placeholder: 1970/01/01
+    validations:
+      required: true
+
+  - type: textarea
+    id: maintainer
+    attributes:
+      label: Does the project have a maintainer, or a maintainer looking for someone to take over the project?
+      placeholder: The current maintainer...
+    validations:
+      required: true
+
+  - type: textarea
+    id: replicate
+    attributes:
+      label: What active projects replicate the popular functionality of this project, if any?
+      placeholder: |-
+        There's github.com/baz/bar but it's really incomplete.
+        There's also github.com/quz/bar but it's also unmaintained.
+
+  - type: textarea
+    id: example
+    attributes:
+      label: What are some example projects that make use of this package?
+      placeholder: |-
+        My project github.com/zzz/yyy uses it heavily.
+        github.com/www/uuu imports it and has 300 stars.
+
+  - type: textarea
+    id: example
+    attributes:
+      label: "Are there any outstanding **_critical_** bugs that result in the library being totally unusable or insecure?"
+      placeholder: "There's issue #xyz/not at this time"
+
+  - type: input
+    id: importers
+    attributes:
+      label: Please provide a link to the project importers.
+      placeholder: https://pkg.go.dev/github.com/gofrs/uuid?tab=importedby
+    validations:
+      required: true
+
+  - type: textarea
+    id: example
+    attributes:
+      label: What else would you like to mention about the project?
+      placeholder: "Of the packages trying to provide this functionality, this is the cleanest. It's lacking in..."
