@@ -54,7 +54,7 @@ body:
         github.com/www/uuu imports it and has 300 stars.
 
   - type: textarea
-    id: example
+    id: bugs
     attributes:
       label: "Are there any outstanding **_critical_** bugs that result in the library being totally unusable or insecure?"
       placeholder: "There's issue #xyz/not at this time"
@@ -68,7 +68,7 @@ body:
       required: true
 
   - type: textarea
-    id: example
+    id: else
     attributes:
       label: What else would you like to mention about the project?
       placeholder: "Of the packages trying to provide this functionality, this is the cleanest. It's lacking in..."
